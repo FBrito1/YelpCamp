@@ -20,7 +20,6 @@ var commentRoutes    = require("./routes/comments"),
 
 
 mongoose.connect(process.env.DATABASEURL, {useMongoClient: true});
-//mongoose.connect("mongodb://fabio:F15089710.@ds135444.mlab.com:35444/yelpcampfabio",{useMongoClient: true});
 mongoose.Promise = global.Promise;
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
